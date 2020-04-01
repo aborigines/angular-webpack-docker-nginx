@@ -56,12 +56,13 @@ module.exports = (options) => ({
             'process.env': {
                 NODE_ENV: `'${options.env}'`,
                 BUILD_TIMESTAMP: `'${new Date().getTime()}'`,
-                VERSION: `'${pkg.version}'`,
+                VERSION: `'${process.env.hasOwnProperty('APP_VERSION') ? process.env.APP_VERSION : pkg.version}'`,
                 DEBUG_INFO_ENABLED: options.env === 'development',
-                API_URL: `''`
+                API_URL: `'${process.env.API_URL}'`
             }
         }),
         new CopyWebpackPlugin([
+            { from: './src/assets/', to: 'content' },
             { from: './src/favicon.ico', to: 'favicon.ico' },
             { from: './src/robots.txt', to: 'robots.txt' }
         ]),
