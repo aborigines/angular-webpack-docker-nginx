@@ -3,7 +3,7 @@ const tsconfig = require('./tsconfig.json');
 module.exports = {
     preset: 'jest-preset-angular',
     setupFiles: ['jest-date-mock'],
-    setupFilesAfterEnv: ['<rootDir>/src/test/jest.ts'],
+    setupFilesAfterEnv: ['<rootDir>/test/jest.ts'],
     cacheDirectory: '<rootDir>/target/jest-cache',
     coverageDirectory: '<rootDir>/target/test-results/',
     globals: {
@@ -15,7 +15,7 @@ module.exports = {
     },
     coveragePathIgnorePatterns: [
         '<rootDir>/node_modules/',
-        '<rootDir>/src/test/'
+        '<rootDir>/test/'
     ],
     moduleNameMapper: mapTypescriptAliasToJestAlias(),
     reporters: [
