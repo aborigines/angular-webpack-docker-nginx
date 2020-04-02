@@ -1,9 +1,11 @@
 # AngularWebpackDockerNginx
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+easy for developer run at the localhost and deploy to the production
 
 ## Run for Develop
 - npm start
+
+## Build prodution with API_URL
+- npm run build -- --env.API_URL=${API_URL}
 
 ## Change unit test from karma to jest
 
@@ -12,5 +14,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - lib https://github.com/thymikee/jest-preset-angular
 
 ## Change to webpack
-
 - inspiration from [Jhipster](https://www.jhipster.tech/)
