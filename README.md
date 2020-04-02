@@ -1,5 +1,9 @@
 # AngularWebpackDockerNginx
-easy for developer run at the localhost and deploy to the production
+easy for developer run at the localhost and have fun deploy to the production
+
+## what's change
+- change unit test from karma to jest
+- add the webpack for develop and production
 
 ## Run for Develop
 - npm start
