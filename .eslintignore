@@ -1,10 +1,12 @@
 node_modules/
-src/test/jest.conf.js
 jest.config.js
-src/test/jest.js
+test/
 webpack/
 target/
 build/
 node/
 dist/
 e2e/
+postcss.config.js
+src/main.ts
+src/polyfills.ts

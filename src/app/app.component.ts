@@ -8,13 +8,13 @@ import { DEBUG_INFO_ENABLED, VERSION, API_URL } from '../constants';
 })
 export class AppComponent {
   title = 'angular-webpack-docker-nginx';
-  DEBUG_INFO_ENABLED: Boolean;
-  VERSION: String;
-  API_URL: String;
+  DEBUG_INFO_ENABLED: boolean;
+  VERSION: string;
+  API_URL: string;
 
   constructor() {
-    this.DEBUG_INFO_ENABLED = DEBUG_INFO_ENABLED as Boolean;
-    this.VERSION = VERSION as String;
-    this.API_URL = API_URL as String;
+    this.DEBUG_INFO_ENABLED = DEBUG_INFO_ENABLED;
+    this.VERSION = VERSION as string;
+    this.API_URL = API_URL as string;
   }
 }
