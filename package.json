@@ -43,7 +43,7 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.901.0",
+    "@angular-devkit/build-angular": "~21.0.1",
     "@angular/cli": "~9.1.0",
     "@angular/compiler-cli": "~9.1.0",
     "@angular/language-service": "~9.1.0",
@@ -96,7 +96,7 @@
     "webpack": "^4.42.1",
     "webpack-bundle-analyzer": "^3.6.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3",
+    "webpack-dev-server": "^5.2.2",
     "webpack-merge": "^4.2.2",
     "webpack-notifier": "^1.8.0",
     "workbox-webpack-plugin": "^5.1.2",
